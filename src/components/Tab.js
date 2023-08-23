@@ -14,7 +14,9 @@ const Tabs = ({props}) => {
                     ))
                 }
             </ul>
-            <p>This is the content for {displayTab}</p>
+            {
+                displayTab && <p>This is the content for {displayTab}</p>
+            }
         </div>
     )
 }
